@@ -2,24 +2,33 @@
 
 int main(void)
 {
-    printf("L\n");
-    printf("L\n");
-    printf("L\n");
-    printf("L\n");
-    printf("L\n");
-    printf("L\n");
-    printf("LLLLLLL\n");
+    printf("H     H\n");
+    printf("H     H\n");
+    printf("H     H\n");
+    printf("HHHHHHH\n");
+    printf("H     H\n");
+    printf("H     H\n");
+    printf("H     H\n");
 
     printf("\n");
 
-    printf(" QQQQQ \n");
-    printf("Q     Q\n");
-    printf("Q     Q\n");
-    printf("Q     Q\n");
-    printf("Q   Q Q\n");
-    printf("Q    QQ\n");
-    printf(" QQQQQ \n");
-    printf("      Q\n");
+    printf("ZZZZZZZ\n");
+    printf("     Z \n");
+    printf("    Z  \n");
+    printf("   Z   \n");
+    printf("  Z    \n");
+    printf(" Z     \n");
+    printf("ZZZZZZZ\n");
+
+    printf("\n");
+
+    printf("RRRRRR \n");
+    printf("R     R\n");
+    printf("R     R\n");
+    printf("RRRRRR \n");
+    printf("R   R  \n");
+    printf("R    R \n");
+    printf("R     R\n");
 
     return 0;
 }
