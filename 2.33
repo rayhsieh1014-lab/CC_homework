@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main(void)
+{
+    double kilometers;
+    double pricePerLiter;
+    double kilometersPerLiter;
+    double parkingFees;
+    double tolls;
+    double dailyCost;
+
+    printf("Total kilometers driven per day: ");
+    if (scanf("%lf", &kilometers) != 1)
+        return 1;
+
+    printf("Cost per liter of gasoline: ");
+    if (scanf("%lf", &pricePerLiter) != 1)
+        return 1;
+
+    printf("Average kilometers per liter: ");
+    if (scanf("%lf", &kilometersPerLiter) != 1)
+        return 1;
+
+    printf("Parking fees per day: ");
+    if (scanf("%lf", &parkingFees) != 1)
+        return 1;
+
+    printf("Tolls per day: ");
+    if (scanf("%lf", &tolls) != 1)
+        return 1;
+
+    if (kilometers < 0 || pricePerLiter < 0 ||
+        kilometersPerLiter <= 0 || parkingFees < 0 || tolls < 0)
+    {
+        printf("Invalid input.\n");
+        return 1;
+    }
+
+    dailyCost = kilometers / kilometersPerLiter * pricePerLiter
+                + parkingFees + tolls;
+
+    printf("Daily driving cost: %.2f\n", dailyCost);
+
+    return 0;
+}
