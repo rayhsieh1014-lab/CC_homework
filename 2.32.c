@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main(void)
+{
+    double weight, height, bmi;
+
+    printf("Enter weight in kilograms: ");
+    if (scanf("%lf", &weight) != 1)
+        return 1;
+
+    printf("Enter height in meters: ");
+    if (scanf("%lf", &height) != 1)
+        return 1;
+
+    if (weight <= 0 || height <= 0)
+    {
+        printf("Weight and height must be greater than zero.\n");
+        return 1;
+    }
+
+    bmi = weight / (height * height);
+
+    printf("\nBMI: %.2f\n", bmi);
+    printf("\nBMI VALUES\n");
+    printf("Underweight: less than 18.5\n");
+    printf("Normal:      between 18.5 and 24.9\n");
+    printf("Overweight:  between 25 and 29.9\n");
+    printf("Obese:       30 or greater\n");
+
+    return 0;
+}
