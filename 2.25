@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(void)
+{
+    printf("L\n");
+    printf("L\n");
+    printf("L\n");
+    printf("L\n");
+    printf("L\n");
+    printf("L\n");
+    printf("LLLLLLL\n");
+
+    printf("\n");
+
+    printf(" QQQQQ \n");
+    printf("Q     Q\n");
+    printf("Q     Q\n");
+    printf("Q     Q\n");
+    printf("Q   Q Q\n");
+    printf("Q    QQ\n");
+    printf(" QQQQQ \n");
+    printf("      Q\n");
+
+    return 0;
+}
